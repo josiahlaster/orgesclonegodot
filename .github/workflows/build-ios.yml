@@ -18,29 +18,24 @@ jobs:
 
     - name: Download Godot
       run: |
-        wget https://github.com/godotengine/godot/releases/download/3.5.3-stable/Godot_v3.5.3-stable_osx.universal.zip
-        unzip Godot_v3.5.3-stable_osx.universal.zip -d godot
+        wget https://github.com/godotengine/godot/releases/download/4.6.2-stable/Godot_v4.6.2-stable_macos.universal.zip
+        unzip Godot_v4.6.2-stable_macos.universal.zip -d godot
         sudo mv godot/Godot.app /Applications/Godot.app
         sudo ln -s /Applications/Godot.app/Contents/MacOS/Godot /usr/local/bin/godot
 
     - name: Download Godot Export Templates
       run: |
-        mkdir -p ~/Library/Application\ Support/Godot/templates/3.5.3.stable
-        cd ~/Library/Application\ Support/Godot/templates/3.5.3.stable
-        wget https://github.com/godotengine/godot/releases/download/3.5.3-stable/Godot_v3.5.3-stable_export_templates.tpz
-        tar -xzf Godot_v3.5.3-stable_export_templates.tpz -C ~/Library/Application\ Support/Godot/templates/3.5.3.stable
-        cd templates
-        mv * ..
-        cd ..
-        ls
+        mkdir -p ~/Library/Application\ Support/Godot/export_templates/4.6.2.stable
+        wget https://github.com/godotengine/godot/releases/download/4.6.2-stable/Godot_v4.6.2-stable_export_templates.tpz
+        unzip Godot_v4.6.2-stable_export_templates.tpz -d templates_zip
+        mv templates_zip/templates/* ~/Library/Application\ Support/Godot/export_templates/4.6.2.stable/
+        ls ~/Library/Application\ Support/Godot/export_templates/4.6.2.stable/
 
     - name: Create build directory
       run: mkdir -p build
 
     - name: Export iOS project
-      run: godot --export "iOS" build/your_project_name.xcodeproj
-      env:
-        DISPLAY: :99.0
+      run: godot --headless --export-release "iOS" build/your_project_name.xcodeproj
         
     - name: Set iOS Deployment Target
       run: sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = 10.0;/IPHONEOS_DEPLOYMENT_TARGET = 12.0;/' build/your_project_name.xcodeproj/project.pbxproj

@@ -31,19 +31,19 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -200.0
-offset_top = -185.0
+offset_left = -162.0
+offset_top = -148.0
 offset_right = -10.0
-offset_bottom = -12.0
+offset_bottom = -14.0
 grow_horizontal = 0
 grow_vertical = 0
 
 [node name="BtnJump" type="Control" parent="Buttons"]
 layout_mode = 0
 offset_left = 0.0
-offset_top = 120.0
-offset_right = 52.0
-offset_bottom = 172.0
+offset_top = 90.0
+offset_right = 38.0
+offset_bottom = 128.0
 script = ExtResource("3_button")
 action_name = "ui_accept"
 label_text = "J"
@@ -52,9 +52,9 @@ color = Color(0.15, 0.65, 0.95, 0.85)
 [node name="BtnMovelist" type="Control" parent="Buttons"]
 layout_mode = 0
 offset_left = 0.0
-offset_top = 60.0
-offset_right = 52.0
-offset_bottom = 112.0
+offset_top = 45.0
+offset_right = 38.0
+offset_bottom = 83.0
 script = ExtResource("3_button")
 action_name = "ui_movelist"
 label_text = "M"
@@ -62,10 +62,10 @@ color = Color(0.1, 0.8, 0.9, 0.85)
 
 [node name="BtnPower" type="Control" parent="Buttons"]
 layout_mode = 0
-offset_left = 75.0
+offset_left = 57.0
 offset_top = 0.0
-offset_right = 127.0
-offset_bottom = 52.0
+offset_right = 95.0
+offset_bottom = 38.0
 script = ExtResource("3_button")
 action_name = "ui_power"
 label_text = "X"
@@ -73,10 +73,10 @@ color = Color(0.65, 0.25, 0.95, 0.85)
 
 [node name="BtnSpecial" type="Control" parent="Buttons"]
 layout_mode = 0
-offset_left = 75.0
-offset_top = 60.0
-offset_right = 127.0
-offset_bottom = 112.0
+offset_left = 57.0
+offset_top = 45.0
+offset_right = 95.0
+offset_bottom = 83.0
 script = ExtResource("3_button")
 action_name = "ui_special"
 label_text = "Y"
@@ -84,10 +84,10 @@ color = Color(0.95, 0.75, 0.1, 0.85)
 
 [node name="BtnAttack" type="Control" parent="Buttons"]
 layout_mode = 0
-offset_left = 75.0
-offset_top = 120.0
-offset_right = 127.0
-offset_bottom = 172.0
+offset_left = 57.0
+offset_top = 90.0
+offset_right = 95.0
+offset_bottom = 128.0
 script = ExtResource("3_button")
 action_name = "ui_attack"
 label_text = "A"
@@ -95,10 +95,10 @@ color = Color(0.95, 0.25, 0.25, 0.85)
 
 [node name="BtnDash" type="Control" parent="Buttons"]
 layout_mode = 0
-offset_left = 138.0
-offset_top = 60.0
-offset_right = 190.0
-offset_bottom = 112.0
+offset_left = 114.0
+offset_top = 45.0
+offset_right = 152.0
+offset_bottom = 83.0
 script = ExtResource("3_button")
 action_name = "ui_dash"
 label_text = "B"

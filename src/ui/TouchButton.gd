@@ -8,7 +8,7 @@ var active_touch_index: int = -1
 var is_pressed: bool = false
 
 func _ready():
-	custom_minimum_size = Vector2(52, 52)
+	custom_minimum_size = Vector2(38, 38)
 
 func _draw():
 	var center = size / 2.0
@@ -34,7 +34,7 @@ func _draw():
 
 	# Label
 	var font = ThemeDB.fallback_font
-	var font_size = 14
+	var font_size = 11
 	var text_size = font.get_string_size(label_text, HORIZONTAL_ALIGNMENT_CENTER, -1, font_size)
 	var text_pos = center - Vector2(text_size.x / 2.0, -font_size / 3.5)
 	var text_color = Color.WHITE if is_pressed else Color(1, 1, 1, 0.85)

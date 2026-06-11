@@ -68,11 +68,13 @@ func _ready():
 		if hurtbox_col and hurtbox_col.shape:
 			hurtbox_col.shape = hurtbox_col.shape.duplicate()
 			if hurtbox_col.shape is RectangleShape2D:
-				hurtbox_col.shape.size = Vector2(24.0, 55.0)
+				# Head-to-torso only: narrower and shorter than full body
+				hurtbox_col.shape.size = Vector2(22.0, 32.0)
 			elif hurtbox_col.shape is CapsuleShape2D:
-				hurtbox_col.shape.radius = 12.0
-				hurtbox_col.shape.height = 55.0
-			hurtbox_col.position = Vector2(0, -30.0)
+				hurtbox_col.shape.radius = 10.0
+				hurtbox_col.shape.height = 32.0
+			# Position centered on torso/chest, offset upward from feet
+			hurtbox_col.position = Vector2(0, -38.0)
 		
 	# Configure Hitbox at runtime
 	if hitbox:

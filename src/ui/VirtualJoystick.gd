@@ -10,14 +10,13 @@ var drag_position: Vector2 = Vector2.ZERO  # Current finger position
 var is_active: bool = false
 
 func _ready():
-	# Full left-half of screen is the joystick zone
-	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	custom_minimum_size = Vector2.ZERO
+	pass  # Anchors set in .tscn, no override needed
 
 func _draw():
 	if not is_active:
 		# Draw faint hint circle so players know where to press
-		var hint_pos = Vector2(size.x * 0.25, size.y * 0.78)
+		var vp = get_viewport_rect().size
+		var hint_pos = Vector2(vp.x * 0.25, vp.y * 0.78)
 		draw_arc(hint_pos, max_drag_radius, 0, TAU, 32, Color(1, 1, 1, 0.08), 1.5, true)
 		var inner = max_drag_radius * 0.35
 		draw_circle(hint_pos, inner, Color(1, 1, 1, 0.06))
@@ -44,7 +43,8 @@ func _input(event):
 
 		if event.pressed:
 			# Only claim touches on the left 55% of screen
-			if active_touch_index == -1 and pos.x < size.x * 0.55:
+			var screen_w = get_viewport_rect().size.x
+			if active_touch_index == -1 and pos.x < screen_w * 0.55:
 				active_touch_index = event.index
 				touch_start = pos
 				drag_position = pos

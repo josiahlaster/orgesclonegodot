@@ -6,6 +6,3 @@ func _ready():
 	var is_touchscreen = DisplayServer.is_touchscreen_available()
 	var is_debug = OS.is_debug_build()
 	visible = is_mobile or is_touchscreen or is_debug
-	
-	# Ensure we're on top of everything and don't block gameplay input propagation
-	mouse_filter = Control.MOUSE_FILTER_IGNORE

@@ -81,6 +81,10 @@ ui_movelist={
 ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [physics]
 
 2d/run_on_separate_thread=true
@@ -89,7 +93,4 @@ ui_movelist={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-
-[input_devices]
-
-pointing/emulate_touch_from_mouse=true
+textures/vram_compression/import_etc2_astc=true

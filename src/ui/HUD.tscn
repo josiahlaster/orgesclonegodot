@@ -1,0 +1,153 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxryyyx3d4y5"]
+
+[ext_resource type="Script" path="res://src/ui/HUD.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://src/ui/TouchControls.tscn" id="2_touch"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hp_bg"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 0.627451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hp_fill"]
+bg_color = Color(0.180392, 0.8, 0.25098, 1)
+border_width_right = 1
+border_color = Color(0.0784314, 0.392157, 0.117647, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mp_fill"]
+bg_color = Color(0.180392, 0.501961, 0.941176, 1)
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TopBar" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 45.0
+grow_horizontal = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/TopBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NameLabel" type="Label" parent="CanvasLayer/TopBar"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 110.0
+offset_bottom = 20.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 9
+text = "DEKU"
+vertical_alignment = 1
+
+[node name="HPBar" type="ProgressBar" parent="CanvasLayer/TopBar"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 22.0
+offset_right = 150.0
+offset_bottom = 30.0
+theme_override_styles/background = SubResource("StyleBoxFlat_hp_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hp_fill")
+value = 80.0
+show_percentage = false
+
+[node name="MPBar" type="ProgressBar" parent="CanvasLayer/TopBar"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 32.0
+offset_right = 110.0
+offset_bottom = 37.0
+theme_override_styles/background = SubResource("StyleBoxFlat_hp_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_mp_fill")
+value = 40.0
+show_percentage = false
+
+[node name="LivesLabel" type="Label" parent="CanvasLayer/TopBar"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.0
+offset_top = 15.0
+offset_right = 40.0
+offset_bottom = 30.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 9
+text = "LIVES: 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer/TopBar"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -160.0
+offset_top = 15.0
+offset_right = -10.0
+offset_bottom = 30.0
+grow_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 9
+text = "SCORE: 000000"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="BossPanel" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -45.0
+offset_right = 160.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="CanvasLayer/BossPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BossNameLabel" type="Label" parent="CanvasLayer/BossPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 210.0
+offset_bottom = 18.0
+theme_override_colors/font_color = Color(1, 0.2, 0.2, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 9
+text = "SASUKE"
+vertical_alignment = 1
+
+[node name="BossHPBar" type="ProgressBar" parent="CanvasLayer/BossPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 20.0
+offset_right = 310.0
+offset_bottom = 26.0
+theme_override_styles/background = SubResource("StyleBoxFlat_hp_bg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hp_fill")
+value = 100.0
+show_percentage = false
+
+[node name="TouchControls" parent="CanvasLayer" instance=ExtResource("2_touch")]

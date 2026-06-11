@@ -1,0 +1,415 @@
+[gd_resource type="SpriteFrames" load_steps=109 format=3]
+
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/77.png" id="1_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/78.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/79.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/80.png" id="4_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/81.png" id="5_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/82.png" id="6_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/83.png" id="7_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/84.png" id="8_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/85.png" id="9_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/86.png" id="10_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/87.png" id="11_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/88.png" id="12_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/71.png" id="13_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/72.png" id="14_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/73.png" id="15_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/74.png" id="16_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/75.png" id="17_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/76.png" id="18_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/54.png" id="19_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/55.png" id="20_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/56.png" id="21_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/29.png" id="22_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/30.png" id="23_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/31.png" id="24_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/32.png" id="25_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/61.png" id="26_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/62.png" id="27_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/63.png" id="28_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/64.png" id="29_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/8.png" id="30_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/840.png" id="31_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/841.png" id="32_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/842.png" id="33_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/843.png" id="34_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/844.png" id="35_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/845.png" id="36_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/846.png" id="37_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/847.png" id="38_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/848.png" id="39_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/135.png" id="40_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/128.png" id="41_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/127.png" id="42_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/129.png" id="43_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/102.png" id="44_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/103.png" id="45_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/104.png" id="46_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/105.png" id="47_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/106.png" id="48_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/97.png" id="49_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/107.png" id="50_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/98.png" id="51_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/99.png" id="52_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/100.png" id="53_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/101.png" id="54_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/33.png" id="55_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/34.png" id="56_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/93.png" id="57_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/94.png" id="58_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/95.png" id="59_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/96.png" id="60_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/48.png" id="61_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/49.png" id="62_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/50.png" id="63_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/51.png" id="64_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/52.png" id="65_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/53.png" id="66_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/35.png" id="67_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/36.png" id="68_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/37.png" id="69_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/38.png" id="70_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/39.png" id="71_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/40.png" id="72_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/41.png" id="73_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/42.png" id="74_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/277.png" id="75_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/275.png" id="76_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/transformation_69.png" id="77_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/6.png" id="78_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/7.png" id="79_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/2.png" id="80_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/3.png" id="81_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/4.png" id="82_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/5.png" id="83_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/16.png" id="84_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/17.png" id="85_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/18.png" id="86_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/19.png" id="87_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/65.png" id="88_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/66.png" id="89_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/67.png" id="90_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/68.png" id="91_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/69.png" id="92_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/70.png" id="93_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/109.png" id="94_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/110.png" id="95_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/130.png" id="96_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/131.png" id="97_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/9.png" id="98_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/10.png" id="99_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/11.png" id="100_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/12.png" id="101_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/13.png" id="102_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/14.png" id="103_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/15.png" id="104_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/89.png" id="105_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/90.png" id="106_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/91.png" id="107_tex"]
+[ext_resource type="Texture2D" path="res://characters/Yusuke/sprites/92.png" id="108_tex"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 0.09, "texture": ExtResource("1_tex")},
+{"duration": 0.09, "texture": ExtResource("2_tex")},
+{"duration": 0.09, "texture": ExtResource("3_tex")},
+{"duration": 0.09, "texture": ExtResource("4_tex")}],
+"loop": false,
+"name": &"attack1",
+"speed": 6.0}, {
+"frames": [{"duration": 0.15, "texture": ExtResource("5_tex")},
+{"duration": 0.15, "texture": ExtResource("6_tex")},
+{"duration": 0.15, "texture": ExtResource("7_tex")}],
+"loop": false,
+"name": &"attack2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("8_tex")},
+{"duration": 0.21, "texture": ExtResource("9_tex")},
+{"duration": 0.21, "texture": ExtResource("10_tex")},
+{"duration": 0.21, "texture": ExtResource("11_tex")},
+{"duration": 0.21, "texture": ExtResource("12_tex")}],
+"loop": false,
+"name": &"attack3",
+"speed": 6.0}, {
+"frames": [{"duration": 0.09, "texture": ExtResource("13_tex")},
+{"duration": 0.09, "texture": ExtResource("14_tex")},
+{"duration": 0.09, "texture": ExtResource("15_tex")},
+{"duration": 0.09, "texture": ExtResource("16_tex")},
+{"duration": 0.09, "texture": ExtResource("17_tex")},
+{"duration": 0.09, "texture": ExtResource("18_tex")}],
+"loop": false,
+"name": &"attack4",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("19_tex")},
+{"duration": 0.21, "texture": ExtResource("20_tex")},
+{"duration": 0.21, "texture": ExtResource("21_tex")}],
+"loop": false,
+"name": &"attack5",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("22_tex")},
+{"duration": 0.21, "texture": ExtResource("23_tex")},
+{"duration": 0.21, "texture": ExtResource("24_tex")},
+{"duration": 0.21, "texture": ExtResource("25_tex")}],
+"loop": true,
+"name": &"charge",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("26_tex")},
+{"duration": 0.21, "texture": ExtResource("27_tex")},
+{"duration": 0.21, "texture": ExtResource("28_tex")},
+{"duration": 0.21, "texture": ExtResource("29_tex")}],
+"loop": false,
+"name": &"chargeattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("30_tex")},
+{"duration": 0.06, "texture": ExtResource("31_tex")},
+{"duration": 0.06, "texture": ExtResource("32_tex")},
+{"duration": 0.06, "texture": ExtResource("33_tex")},
+{"duration": 0.06, "texture": ExtResource("34_tex")},
+{"duration": 0.06, "texture": ExtResource("35_tex")},
+{"duration": 0.06, "texture": ExtResource("36_tex")},
+{"duration": 0.06, "texture": ExtResource("37_tex")},
+{"duration": 0.06, "texture": ExtResource("38_tex")},
+{"duration": 0.06, "texture": ExtResource("39_tex")},
+{"duration": 0.21, "texture": ExtResource("30_tex")}],
+"loop": false,
+"name": &"dodge",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("40_tex")}],
+"loop": false,
+"name": &"faint",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("41_tex")},
+{"duration": 0.21, "texture": ExtResource("42_tex")},
+{"duration": 0.21, "texture": ExtResource("43_tex")}],
+"loop": false,
+"name": &"fall",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("22_tex")},
+{"duration": 0.21, "texture": ExtResource("23_tex")},
+{"duration": 0.21, "texture": ExtResource("24_tex")},
+{"duration": 0.21, "texture": ExtResource("25_tex")}],
+"loop": false,
+"name": &"follow1",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("44_tex")},
+{"duration": 0.21, "texture": ExtResource("45_tex")},
+{"duration": 0.21, "texture": ExtResource("46_tex")},
+{"duration": 0.21, "texture": ExtResource("47_tex")},
+{"duration": 0.21, "texture": ExtResource("48_tex")},
+{"duration": 0.21, "texture": ExtResource("26_tex")},
+{"duration": 0.21, "texture": ExtResource("27_tex")},
+{"duration": 0.21, "texture": ExtResource("28_tex")},
+{"duration": 0.21, "texture": ExtResource("29_tex")},
+{"duration": 0.21, "texture": ExtResource("49_tex")},
+{"duration": 0.21, "texture": ExtResource("50_tex")},
+{"duration": 0.21, "texture": ExtResource("51_tex")},
+{"duration": 0.21, "texture": ExtResource("52_tex")},
+{"duration": 0.21, "texture": ExtResource("53_tex")},
+{"duration": 0.21, "texture": ExtResource("54_tex")}],
+"loop": false,
+"name": &"freespecial",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("30_tex")},
+{"duration": 0.06, "texture": ExtResource("31_tex")},
+{"duration": 0.06, "texture": ExtResource("32_tex")},
+{"duration": 0.06, "texture": ExtResource("33_tex")},
+{"duration": 0.06, "texture": ExtResource("34_tex")},
+{"duration": 0.06, "texture": ExtResource("35_tex")},
+{"duration": 0.06, "texture": ExtResource("36_tex")},
+{"duration": 0.06, "texture": ExtResource("37_tex")},
+{"duration": 0.06, "texture": ExtResource("38_tex")},
+{"duration": 0.06, "texture": ExtResource("39_tex")},
+{"duration": 0.21, "texture": ExtResource("30_tex")}],
+"loop": false,
+"name": &"freespecial11",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("55_tex")},
+{"duration": 0.21, "texture": ExtResource("56_tex")},
+{"duration": 0.21, "texture": ExtResource("57_tex")},
+{"duration": 0.21, "texture": ExtResource("58_tex")},
+{"duration": 0.21, "texture": ExtResource("59_tex")},
+{"duration": 0.21, "texture": ExtResource("60_tex")},
+{"duration": 0.21, "texture": ExtResource("57_tex")},
+{"duration": 0.21, "texture": ExtResource("58_tex")},
+{"duration": 0.21, "texture": ExtResource("59_tex")},
+{"duration": 0.21, "texture": ExtResource("60_tex")},
+{"duration": 0.21, "texture": ExtResource("57_tex")},
+{"duration": 0.21, "texture": ExtResource("58_tex")},
+{"duration": 0.21, "texture": ExtResource("59_tex")},
+{"duration": 0.21, "texture": ExtResource("60_tex")},
+{"duration": 0.21, "texture": ExtResource("61_tex")},
+{"duration": 0.21, "texture": ExtResource("62_tex")},
+{"duration": 0.21, "texture": ExtResource("63_tex")},
+{"duration": 0.21, "texture": ExtResource("64_tex")},
+{"duration": 0.21, "texture": ExtResource("65_tex")},
+{"duration": 0.21, "texture": ExtResource("66_tex")}],
+"loop": false,
+"name": &"freespecial2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("69_tex")},
+{"duration": 0.21, "texture": ExtResource("70_tex")},
+{"duration": 0.21, "texture": ExtResource("71_tex")},
+{"duration": 0.21, "texture": ExtResource("72_tex")},
+{"duration": 0.21, "texture": ExtResource("73_tex")},
+{"duration": 0.21, "texture": ExtResource("74_tex")}],
+"loop": false,
+"name": &"freespecial3",
+"speed": 6.0}, {
+"frames": [{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("75_tex")},
+{"duration": 0.21, "texture": ExtResource("76_tex")},
+{"duration": 0.21, "texture": ExtResource("77_tex")}],
+"loop": false,
+"name": &"freespecial4",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("55_tex")},
+{"duration": 0.21, "texture": ExtResource("56_tex")},
+{"duration": 0.21, "texture": ExtResource("57_tex")},
+{"duration": 0.21, "texture": ExtResource("58_tex")},
+{"duration": 0.21, "texture": ExtResource("59_tex")},
+{"duration": 0.21, "texture": ExtResource("60_tex")},
+{"duration": 0.21, "texture": ExtResource("57_tex")},
+{"duration": 0.21, "texture": ExtResource("58_tex")},
+{"duration": 0.21, "texture": ExtResource("59_tex")},
+{"duration": 0.21, "texture": ExtResource("60_tex")},
+{"duration": 0.21, "texture": ExtResource("57_tex")},
+{"duration": 0.21, "texture": ExtResource("58_tex")},
+{"duration": 0.21, "texture": ExtResource("59_tex")},
+{"duration": 0.21, "texture": ExtResource("60_tex")},
+{"duration": 0.21, "texture": ExtResource("44_tex")},
+{"duration": 0.21, "texture": ExtResource("45_tex")},
+{"duration": 0.21, "texture": ExtResource("46_tex")},
+{"duration": 0.21, "texture": ExtResource("47_tex")},
+{"duration": 0.21, "texture": ExtResource("48_tex")},
+{"duration": 0.21, "texture": ExtResource("26_tex")},
+{"duration": 0.21, "texture": ExtResource("27_tex")},
+{"duration": 0.21, "texture": ExtResource("28_tex")},
+{"duration": 0.21, "texture": ExtResource("29_tex")},
+{"duration": 0.21, "texture": ExtResource("49_tex")},
+{"duration": 0.21, "texture": ExtResource("50_tex")},
+{"duration": 0.21, "texture": ExtResource("51_tex")},
+{"duration": 0.21, "texture": ExtResource("52_tex")},
+{"duration": 0.21, "texture": ExtResource("53_tex")},
+{"duration": 0.21, "texture": ExtResource("54_tex")}],
+"loop": false,
+"name": &"freespecial5",
+"speed": 6.0}, {
+"frames": [{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.45, "texture": ExtResource("13_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")}],
+"loop": false,
+"name": &"freespecial6",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("78_tex")},
+{"duration": 0.21, "texture": ExtResource("79_tex")}],
+"loop": false,
+"name": &"get",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("80_tex")},
+{"duration": 0.21, "texture": ExtResource("81_tex")},
+{"duration": 0.21, "texture": ExtResource("82_tex")},
+{"duration": 0.21, "texture": ExtResource("83_tex")}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("84_tex")},
+{"duration": 0.21, "texture": ExtResource("85_tex")},
+{"duration": 0.21, "texture": ExtResource("86_tex")},
+{"duration": 0.21, "texture": ExtResource("87_tex")}],
+"loop": false,
+"name": &"jump",
+"speed": 6.0}, {
+"frames": [{"duration": 0.15, "texture": ExtResource("88_tex")},
+{"duration": 0.15, "texture": ExtResource("89_tex")},
+{"duration": 0.15, "texture": ExtResource("90_tex")},
+{"duration": 0.15, "texture": ExtResource("91_tex")},
+{"duration": 0.15, "texture": ExtResource("92_tex")},
+{"duration": 0.15, "texture": ExtResource("93_tex")}],
+"loop": false,
+"name": &"jumpattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("94_tex")},
+{"duration": 0.21, "texture": ExtResource("95_tex")}],
+"loop": false,
+"name": &"pain",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("96_tex")},
+{"duration": 0.21, "texture": ExtResource("97_tex")}],
+"loop": false,
+"name": &"rise",
+"speed": 6.0}, {
+"frames": [{"duration": 0.15, "texture": ExtResource("30_tex")},
+{"duration": 0.15, "texture": ExtResource("98_tex")},
+{"duration": 0.15, "texture": ExtResource("99_tex")},
+{"duration": 0.15, "texture": ExtResource("100_tex")},
+{"duration": 0.15, "texture": ExtResource("101_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("104_tex")}],
+"loop": true,
+"name": &"run",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("105_tex")},
+{"duration": 0.21, "texture": ExtResource("106_tex")},
+{"duration": 0.21, "texture": ExtResource("107_tex")},
+{"duration": 0.21, "texture": ExtResource("108_tex")}],
+"loop": false,
+"name": &"runattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("80_tex")}],
+"loop": false,
+"name": &"spawn",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("30_tex")},
+{"duration": 0.21, "texture": ExtResource("98_tex")},
+{"duration": 0.21, "texture": ExtResource("99_tex")},
+{"duration": 0.21, "texture": ExtResource("100_tex")},
+{"duration": 0.21, "texture": ExtResource("101_tex")},
+{"duration": 0.21, "texture": ExtResource("102_tex")},
+{"duration": 0.21, "texture": ExtResource("103_tex")},
+{"duration": 0.21, "texture": ExtResource("104_tex")}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]

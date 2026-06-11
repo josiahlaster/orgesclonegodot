@@ -1,0 +1,456 @@
+[gd_resource type="SpriteFrames" load_steps=145 format=3]
+
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jab00.png" id="1_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jab01.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jab02.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jab03.png" id="4_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/head00.png" id="5_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/head01.png" id="6_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/head02.png" id="7_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/head03.png" id="8_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/punch00.png" id="9_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/punch01.png" id="10_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/punch02.png" id="11_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/punch03.png" id="12_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/punch04.png" id="13_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/101.png" id="14_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/102.png" id="15_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/103.png" id="16_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/104.png" id="17_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/105.png" id="18_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/106.png" id="19_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/burn1.png" id="20_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/burn2.png" id="21_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/burn3.png" id="22_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/run05.png" id="23_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/840.png" id="24_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/841.png" id="25_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/842.png" id="26_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/843.png" id="27_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/844.png" id="28_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/845.png" id="29_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/846.png" id="30_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/847.png" id="31_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/848.png" id="32_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/empty.png" id="33_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/get00.png" id="34_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/get01.png" id="35_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/get02.png" id="36_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/fall00.png" id="37_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/fall01.png" id="38_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec00.png" id="39_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec01.png" id="40_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec02.png" id="41_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec03.png" id="42_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec04.png" id="43_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec05.png" id="44_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec06.png" id="45_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec07.png" id="46_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec08.png" id="47_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec09.png" id="48_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec10.png" id="49_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec11.png" id="50_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec12.png" id="51_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec13.png" id="52_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec14.png" id="53_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/spec15.png" id="54_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/kick01.png" id="55_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/kick02.png" id="56_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/upper00.png" id="57_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/upper01.png" id="58_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/upper02.png" id="59_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/upper03.png" id="60_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jump00.png" id="61_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jatk00.png" id="62_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jatk01.png" id="63_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jatk02.png" id="64_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/34.png" id="65_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/35.png" id="66_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/5.png" id="67_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/6.png" id="68_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/107.png" id="69_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/110.png" id="70_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/112.png" id="71_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/7.png" id="72_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/8.png" id="73_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/170.png" id="74_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/171.png" id="75_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/172.png" id="76_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/173.png" id="77_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/174.png" id="78_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/175.png" id="79_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/176.png" id="80_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/177.png" id="81_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/178.png" id="82_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/179.png" id="83_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/180.png" id="84_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/181.png" id="85_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/182.png" id="86_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/183.png" id="87_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/228.png" id="88_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/229.png" id="89_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/230.png" id="90_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/231.png" id="91_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/232.png" id="92_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/233.png" id="93_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/234.png" id="94_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/235.png" id="95_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/236.png" id="96_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/36.png" id="97_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/37.png" id="98_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/38.png" id="99_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/39.png" id="100_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/40.png" id="101_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/41.png" id="102_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/42.png" id="103_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/43.png" id="104_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/44.png" id="105_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/45.png" id="106_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/46.png" id="107_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/47.png" id="108_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/48.png" id="109_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/49.png" id="110_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/50.png" id="111_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/idle00.png" id="112_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/idle01.png" id="113_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/idle02.png" id="114_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/idle03.png" id="115_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/jump01.png" id="116_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/95.png" id="117_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/96.png" id="118_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/97.png" id="119_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/pain.png" id="120_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/rise.png" id="121_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/run00.png" id="122_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/run01.png" id="123_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/run02.png" id="124_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/run03.png" id="125_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/run04.png" id="126_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/kick00.png" id="127_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/kick03.png" id="128_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/kick04.png" id="129_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/51.png" id="130_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/52.png" id="131_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/53.png" id="132_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/13.png" id="133_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/14.png" id="134_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/15.png" id="135_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/16.png" id="136_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/17.png" id="137_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/18.png" id="138_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/walk00.png" id="139_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/walk01.png" id="140_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/walk02.png" id="141_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/walk03.png" id="142_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/walk04.png" id="143_tex"]
+[ext_resource type="Texture2D" path="res://characters/Naruto/sprites/walk05.png" id="144_tex"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 0.09, "texture": ExtResource("1_tex")},
+{"duration": 0.09, "texture": ExtResource("2_tex")},
+{"duration": 0.09, "texture": ExtResource("3_tex")},
+{"duration": 0.09, "texture": ExtResource("4_tex")}],
+"loop": false,
+"name": &"attack1",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("5_tex")},
+{"duration": 0.21, "texture": ExtResource("6_tex")},
+{"duration": 0.21, "texture": ExtResource("7_tex")},
+{"duration": 0.21, "texture": ExtResource("8_tex")}],
+"loop": false,
+"name": &"attack2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("9_tex")},
+{"duration": 0.21, "texture": ExtResource("10_tex")},
+{"duration": 0.21, "texture": ExtResource("11_tex")},
+{"duration": 0.21, "texture": ExtResource("12_tex")},
+{"duration": 0.21, "texture": ExtResource("13_tex")}],
+"loop": false,
+"name": &"attack3",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("16_tex")},
+{"duration": 0.21, "texture": ExtResource("17_tex")},
+{"duration": 0.21, "texture": ExtResource("18_tex")},
+{"duration": 0.21, "texture": ExtResource("19_tex")}],
+"loop": false,
+"name": &"attack4",
+"speed": 6.0}, {
+"frames": [{"duration": 0.09, "texture": ExtResource("20_tex")},
+{"duration": 0.09, "texture": ExtResource("21_tex")},
+{"duration": 0.09, "texture": ExtResource("22_tex")}],
+"loop": true,
+"name": &"burn",
+"speed": 6.0}, {
+"frames": [{"duration": 0.03, "texture": ExtResource("23_tex")},
+{"duration": 0.06, "texture": ExtResource("24_tex")},
+{"duration": 0.06, "texture": ExtResource("25_tex")},
+{"duration": 0.06, "texture": ExtResource("26_tex")},
+{"duration": 0.06, "texture": ExtResource("27_tex")},
+{"duration": 0.06, "texture": ExtResource("28_tex")},
+{"duration": 0.06, "texture": ExtResource("29_tex")},
+{"duration": 0.06, "texture": ExtResource("30_tex")},
+{"duration": 0.06, "texture": ExtResource("31_tex")},
+{"duration": 0.06, "texture": ExtResource("32_tex")},
+{"duration": 0.21, "texture": ExtResource("33_tex")},
+{"duration": 0.21, "texture": ExtResource("23_tex")}],
+"loop": false,
+"name": &"dodge",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("34_tex")},
+{"duration": 0.30, "texture": ExtResource("35_tex")},
+{"duration": 0.30, "texture": ExtResource("36_tex")}],
+"loop": false,
+"name": &"duck",
+"speed": 6.0}, {
+"frames": [{"duration": 0.90, "texture": ExtResource("37_tex")},
+{"duration": 0.60, "texture": ExtResource("38_tex")}],
+"loop": false,
+"name": &"fall",
+"speed": 6.0}, {
+"frames": [{"duration": 0.90, "texture": ExtResource("39_tex")},
+{"duration": 0.30, "texture": ExtResource("40_tex")},
+{"duration": 0.30, "texture": ExtResource("41_tex")},
+{"duration": 0.30, "texture": ExtResource("42_tex")},
+{"duration": 0.30, "texture": ExtResource("43_tex")},
+{"duration": 0.30, "texture": ExtResource("44_tex")},
+{"duration": 0.30, "texture": ExtResource("45_tex")},
+{"duration": 0.30, "texture": ExtResource("46_tex")},
+{"duration": 0.30, "texture": ExtResource("47_tex")},
+{"duration": 0.30, "texture": ExtResource("48_tex")},
+{"duration": 0.30, "texture": ExtResource("49_tex")},
+{"duration": 0.30, "texture": ExtResource("50_tex")},
+{"duration": 0.30, "texture": ExtResource("42_tex")},
+{"duration": 0.30, "texture": ExtResource("51_tex")},
+{"duration": 0.30, "texture": ExtResource("52_tex")},
+{"duration": 0.30, "texture": ExtResource("53_tex")},
+{"duration": 0.30, "texture": ExtResource("54_tex")}],
+"loop": false,
+"name": &"freespecial",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("23_tex")},
+{"duration": 0.06, "texture": ExtResource("24_tex")},
+{"duration": 0.06, "texture": ExtResource("25_tex")},
+{"duration": 0.06, "texture": ExtResource("26_tex")},
+{"duration": 0.06, "texture": ExtResource("27_tex")},
+{"duration": 0.06, "texture": ExtResource("28_tex")},
+{"duration": 0.06, "texture": ExtResource("29_tex")},
+{"duration": 0.06, "texture": ExtResource("30_tex")},
+{"duration": 0.06, "texture": ExtResource("31_tex")},
+{"duration": 0.06, "texture": ExtResource("32_tex")},
+{"duration": 0.21, "texture": ExtResource("33_tex")},
+{"duration": 0.21, "texture": ExtResource("23_tex")}],
+"loop": false,
+"name": &"freespecial11",
+"speed": 6.0}, {
+"frames": [{"duration": 0.18, "texture": ExtResource("1_tex")},
+{"duration": 0.18, "texture": ExtResource("2_tex")},
+{"duration": 0.18, "texture": ExtResource("3_tex")},
+{"duration": 0.18, "texture": ExtResource("4_tex")},
+{"duration": 0.18, "texture": ExtResource("1_tex")},
+{"duration": 0.18, "texture": ExtResource("2_tex")},
+{"duration": 0.18, "texture": ExtResource("3_tex")},
+{"duration": 0.18, "texture": ExtResource("4_tex")},
+{"duration": 0.18, "texture": ExtResource("55_tex")},
+{"duration": 0.18, "texture": ExtResource("56_tex")},
+{"duration": 0.21, "texture": ExtResource("57_tex")},
+{"duration": 0.21, "texture": ExtResource("58_tex")},
+{"duration": 0.21, "texture": ExtResource("59_tex")},
+{"duration": 0.90, "texture": ExtResource("60_tex")},
+{"duration": 0.45, "texture": ExtResource("61_tex")},
+{"duration": 0.18, "texture": ExtResource("62_tex")},
+{"duration": 0.18, "texture": ExtResource("63_tex")},
+{"duration": 0.18, "texture": ExtResource("64_tex")}],
+"loop": false,
+"name": &"freespecial2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("65_tex")},
+{"duration": 0.21, "texture": ExtResource("66_tex")},
+{"duration": 0.21, "texture": ExtResource("65_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("67_tex")},
+{"duration": 0.21, "texture": ExtResource("68_tex")},
+{"duration": 0.21, "texture": ExtResource("69_tex")},
+{"duration": 0.21, "texture": ExtResource("70_tex")},
+{"duration": 0.21, "texture": ExtResource("71_tex")},
+{"duration": 0.30, "texture": ExtResource("72_tex")},
+{"duration": 0.30, "texture": ExtResource("73_tex")},
+{"duration": 0.30, "texture": ExtResource("72_tex")},
+{"duration": 0.30, "texture": ExtResource("73_tex")},
+{"duration": 0.30, "texture": ExtResource("72_tex")},
+{"duration": 0.30, "texture": ExtResource("73_tex")},
+{"duration": 0.30, "texture": ExtResource("72_tex")},
+{"duration": 0.30, "texture": ExtResource("73_tex")}],
+"loop": false,
+"name": &"freespecial3",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("74_tex")},
+{"duration": 0.21, "texture": ExtResource("75_tex")},
+{"duration": 0.21, "texture": ExtResource("76_tex")},
+{"duration": 0.21, "texture": ExtResource("77_tex")},
+{"duration": 0.21, "texture": ExtResource("78_tex")},
+{"duration": 0.21, "texture": ExtResource("79_tex")},
+{"duration": 0.21, "texture": ExtResource("80_tex")},
+{"duration": 0.21, "texture": ExtResource("81_tex")},
+{"duration": 0.21, "texture": ExtResource("82_tex")},
+{"duration": 0.21, "texture": ExtResource("83_tex")},
+{"duration": 0.21, "texture": ExtResource("84_tex")},
+{"duration": 0.21, "texture": ExtResource("85_tex")},
+{"duration": 0.21, "texture": ExtResource("86_tex")},
+{"duration": 0.21, "texture": ExtResource("87_tex")},
+{"duration": 0.21, "texture": ExtResource("88_tex")},
+{"duration": 0.21, "texture": ExtResource("89_tex")},
+{"duration": 0.21, "texture": ExtResource("90_tex")},
+{"duration": 0.21, "texture": ExtResource("91_tex")},
+{"duration": 0.21, "texture": ExtResource("92_tex")},
+{"duration": 0.21, "texture": ExtResource("93_tex")},
+{"duration": 0.21, "texture": ExtResource("94_tex")},
+{"duration": 0.21, "texture": ExtResource("95_tex")},
+{"duration": 0.21, "texture": ExtResource("96_tex")}],
+"loop": false,
+"name": &"freespecial4",
+"speed": 6.0}, {
+"frames": [{"duration": 0.09, "texture": ExtResource("65_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("66_tex")},
+{"duration": 0.09, "texture": ExtResource("65_tex")}],
+"loop": false,
+"name": &"freespecial5",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("97_tex")},
+{"duration": 0.21, "texture": ExtResource("98_tex")},
+{"duration": 0.21, "texture": ExtResource("99_tex")},
+{"duration": 0.21, "texture": ExtResource("100_tex")},
+{"duration": 0.21, "texture": ExtResource("101_tex")},
+{"duration": 0.21, "texture": ExtResource("102_tex")},
+{"duration": 0.21, "texture": ExtResource("103_tex")},
+{"duration": 0.21, "texture": ExtResource("104_tex")},
+{"duration": 0.21, "texture": ExtResource("105_tex")},
+{"duration": 0.21, "texture": ExtResource("106_tex")},
+{"duration": 0.21, "texture": ExtResource("107_tex")},
+{"duration": 0.21, "texture": ExtResource("108_tex")},
+{"duration": 0.21, "texture": ExtResource("109_tex")},
+{"duration": 0.21, "texture": ExtResource("110_tex")},
+{"duration": 0.21, "texture": ExtResource("111_tex")},
+{"duration": 0.21, "texture": ExtResource("111_tex")}],
+"loop": false,
+"name": &"freespecial6",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("34_tex")},
+{"duration": 0.30, "texture": ExtResource("35_tex")},
+{"duration": 0.30, "texture": ExtResource("36_tex")},
+{"duration": 0.30, "texture": ExtResource("35_tex")},
+{"duration": 0.30, "texture": ExtResource("34_tex")}],
+"loop": false,
+"name": &"get",
+"speed": 6.0}, {
+"frames": [{"duration": 0.45, "texture": ExtResource("112_tex")},
+{"duration": 0.45, "texture": ExtResource("113_tex")},
+{"duration": 0.45, "texture": ExtResource("114_tex")},
+{"duration": 0.45, "texture": ExtResource("115_tex")},
+{"duration": 0.45, "texture": ExtResource("114_tex")},
+{"duration": 0.45, "texture": ExtResource("113_tex")}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0}, {
+"frames": [{"duration": 0.60, "texture": ExtResource("61_tex")},
+{"duration": 0.60, "texture": ExtResource("116_tex")}],
+"loop": false,
+"name": &"jump",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("62_tex")},
+{"duration": 0.30, "texture": ExtResource("63_tex")},
+{"duration": 0.30, "texture": ExtResource("64_tex")}],
+"loop": false,
+"name": &"jumpattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("117_tex")},
+{"duration": 0.30, "texture": ExtResource("118_tex")},
+{"duration": 0.30, "texture": ExtResource("119_tex")}],
+"loop": false,
+"name": &"jumpattack2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("36_tex")}],
+"loop": false,
+"name": &"land",
+"speed": 6.0}, {
+"frames": [{"duration": 0.90, "texture": ExtResource("120_tex")}],
+"loop": false,
+"name": &"pain",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("121_tex")},
+{"duration": 0.30, "texture": ExtResource("36_tex")},
+{"duration": 0.30, "texture": ExtResource("35_tex")},
+{"duration": 0.30, "texture": ExtResource("34_tex")}],
+"loop": false,
+"name": &"rise",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("122_tex")},
+{"duration": 0.21, "texture": ExtResource("123_tex")},
+{"duration": 0.21, "texture": ExtResource("124_tex")},
+{"duration": 0.21, "texture": ExtResource("125_tex")},
+{"duration": 0.21, "texture": ExtResource("126_tex")},
+{"duration": 0.21, "texture": ExtResource("23_tex")}],
+"loop": true,
+"name": &"run",
+"speed": 6.0}, {
+"frames": [{"duration": 0.15, "texture": ExtResource("127_tex")},
+{"duration": 0.15, "texture": ExtResource("55_tex")},
+{"duration": 0.15, "texture": ExtResource("56_tex")},
+{"duration": 0.15, "texture": ExtResource("56_tex")},
+{"duration": 0.15, "texture": ExtResource("56_tex")},
+{"duration": 0.21, "texture": ExtResource("128_tex")},
+{"duration": 0.90, "texture": ExtResource("129_tex")}],
+"loop": false,
+"name": &"runattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("130_tex")},
+{"duration": 0.21, "texture": ExtResource("131_tex")},
+{"duration": 0.21, "texture": ExtResource("132_tex")}],
+"loop": false,
+"name": &"select",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("112_tex")}],
+"loop": false,
+"name": &"spawn",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("133_tex")},
+{"duration": 0.21, "texture": ExtResource("134_tex")},
+{"duration": 0.21, "texture": ExtResource("135_tex")},
+{"duration": 0.21, "texture": ExtResource("136_tex")},
+{"duration": 0.21, "texture": ExtResource("137_tex")},
+{"duration": 0.21, "texture": ExtResource("138_tex")}],
+"loop": false,
+"name": &"victory",
+"speed": 6.0}, {
+"frames": [{"duration": 0.45, "texture": ExtResource("139_tex")},
+{"duration": 0.45, "texture": ExtResource("140_tex")},
+{"duration": 0.45, "texture": ExtResource("141_tex")},
+{"duration": 0.45, "texture": ExtResource("142_tex")},
+{"duration": 0.45, "texture": ExtResource("143_tex")},
+{"duration": 0.45, "texture": ExtResource("144_tex")}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]

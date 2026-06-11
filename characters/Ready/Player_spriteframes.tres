@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=30 format=3]
+
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready1.png" id="1_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready2.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready3.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready4.png" id="4_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready5.png" id="5_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready6.png" id="6_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready7.png" id="7_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready8.png" id="8_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready9.png" id="9_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready10.png" id="10_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready11.png" id="11_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready12.png" id="12_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready13.png" id="13_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready14.png" id="14_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready15.png" id="15_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready16.png" id="16_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready17.png" id="17_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready18.png" id="18_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready19.png" id="19_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready20.png" id="20_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready21.png" id="21_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready22.png" id="22_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready23.png" id="23_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready24.png" id="24_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready25.png" id="25_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready26.png" id="26_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready27.png" id="27_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready28.png" id="28_tex"]
+[ext_resource type="Texture2D" path="res://characters/Ready/sprites/ready29.png" id="29_tex"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 0.15, "texture": ExtResource("1_tex")},
+{"duration": 0.15, "texture": ExtResource("2_tex")},
+{"duration": 0.15, "texture": ExtResource("3_tex")},
+{"duration": 0.15, "texture": ExtResource("4_tex")},
+{"duration": 0.15, "texture": ExtResource("5_tex")},
+{"duration": 0.15, "texture": ExtResource("6_tex")},
+{"duration": 0.15, "texture": ExtResource("7_tex")},
+{"duration": 0.15, "texture": ExtResource("8_tex")},
+{"duration": 0.15, "texture": ExtResource("9_tex")},
+{"duration": 0.15, "texture": ExtResource("10_tex")},
+{"duration": 0.15, "texture": ExtResource("11_tex")},
+{"duration": 0.15, "texture": ExtResource("12_tex")},
+{"duration": 0.15, "texture": ExtResource("13_tex")},
+{"duration": 0.15, "texture": ExtResource("14_tex")},
+{"duration": 0.75, "texture": ExtResource("15_tex")},
+{"duration": 0.15, "texture": ExtResource("16_tex")},
+{"duration": 0.15, "texture": ExtResource("17_tex")},
+{"duration": 0.15, "texture": ExtResource("18_tex")},
+{"duration": 0.15, "texture": ExtResource("19_tex")},
+{"duration": 0.15, "texture": ExtResource("20_tex")},
+{"duration": 0.15, "texture": ExtResource("21_tex")},
+{"duration": 0.15, "texture": ExtResource("22_tex")},
+{"duration": 0.15, "texture": ExtResource("23_tex")},
+{"duration": 0.15, "texture": ExtResource("24_tex")},
+{"duration": 0.15, "texture": ExtResource("25_tex")},
+{"duration": 0.15, "texture": ExtResource("26_tex")},
+{"duration": 0.15, "texture": ExtResource("27_tex")},
+{"duration": 0.15, "texture": ExtResource("28_tex")},
+{"duration": 0.15, "texture": ExtResource("29_tex")}],
+"loop": false,
+"name": &"idle",
+"speed": 6.0
+}]

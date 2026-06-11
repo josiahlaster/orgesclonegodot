@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxryyyx3d4y7"]
+
+[ext_resource type="Script" path="res://src/level/Stage1.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/backgrounds/stage-1/n.png" id="2_bg"]
+[ext_resource type="PackedScene" uid="uid://cxryyyx3d4y5" path="res://src/ui/HUD.tscn" id="3_hud"]
+[ext_resource type="PackedScene" uid="uid://cxryyyx3d4y6" path="res://src/ui/GoSign.tscn" id="4_gosign"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boundary"]
+size = Vector2(3424, 100)
+
+[node name="Stage1" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_bg")
+centered = false
+
+[node name="GameplayArea" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="TopBoundary" type="StaticBody2D" parent="."]
+position = Vector2(1712, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopBoundary"]
+shape = SubResource("RectangleShape2D_boundary")
+
+[node name="BottomBoundary" type="StaticBody2D" parent="."]
+position = Vector2(1712, 285)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomBoundary"]
+shape = SubResource("RectangleShape2D_boundary")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(240, 139)
+limit_left = 0
+limit_top = 0
+limit_right = 3424
+limit_bottom = 278
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -6.0
+
+[node name="HUD" parent="." instance=ExtResource("3_hud")]
+
+[node name="GoSign" parent="." instance=ExtResource("4_gosign")]

@@ -1,0 +1,61 @@
+[gd_resource type="SpriteFrames" load_steps=17 format=3]
+
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/punch01.png" id="1_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/punch02.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/punch03.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/punch04.png" id="4_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/punch05.png" id="5_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/punch06.png" id="6_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/fall01.png" id="7_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/fall02.png" id="8_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/idle01.png" id="9_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/idle02.png" id="10_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/pain.png" id="11_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/empty.png" id="12_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/walk01.png" id="13_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/walk02.png" id="14_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/walk03.png" id="15_tex"]
+[ext_resource type="Texture2D" path="res://characters/Marine/sprites/walk04.png" id="16_tex"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 0.30, "texture": ExtResource("1_tex")},
+{"duration": 0.30, "texture": ExtResource("2_tex")},
+{"duration": 0.30, "texture": ExtResource("3_tex")},
+{"duration": 0.30, "texture": ExtResource("4_tex")},
+{"duration": 0.30, "texture": ExtResource("5_tex")},
+{"duration": 0.30, "texture": ExtResource("6_tex")}],
+"loop": false,
+"name": &"attack1",
+"speed": 6.0}, {
+"frames": [{"duration": 0.60, "texture": ExtResource("7_tex")},
+{"duration": 0.60, "texture": ExtResource("7_tex")},
+{"duration": 0.60, "texture": ExtResource("8_tex")}],
+"loop": false,
+"name": &"fall",
+"speed": 6.0}, {
+"frames": [{"duration": 0.45, "texture": ExtResource("9_tex")},
+{"duration": 0.45, "texture": ExtResource("10_tex")}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0}, {
+"frames": [{"duration": 0.90, "texture": ExtResource("11_tex")}],
+"loop": false,
+"name": &"pain",
+"speed": 6.0}, {
+"frames": [{"duration": 0.15, "texture": ExtResource("9_tex")}],
+"loop": false,
+"name": &"rise",
+"speed": 6.0}, {
+"frames": [{"duration": 2.25, "texture": ExtResource("12_tex")}],
+"loop": false,
+"name": &"spawn",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("13_tex")},
+{"duration": 0.30, "texture": ExtResource("14_tex")},
+{"duration": 0.30, "texture": ExtResource("15_tex")},
+{"duration": 0.30, "texture": ExtResource("16_tex")}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]

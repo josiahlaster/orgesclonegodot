@@ -1,0 +1,470 @@
+[gd_resource type="SpriteFrames" load_steps=160 format=3]
+
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/60.png" id="1_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/61.png" id="2_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/62.png" id="3_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/63.png" id="4_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/225.png" id="5_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/226.png" id="6_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/227.png" id="7_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/228.png" id="8_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/229.png" id="9_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/230.png" id="10_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/265.png" id="11_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/266.png" id="12_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/267.png" id="13_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/268.png" id="14_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/269.png" id="15_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/270.png" id="16_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/271.png" id="17_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/272.png" id="18_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/297.png" id="19_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/298.png" id="20_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/299.png" id="21_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/300.png" id="22_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/301.png" id="23_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/302.png" id="24_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/303.png" id="25_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/30.png" id="26_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/840.png" id="27_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/841.png" id="28_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/842.png" id="29_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/843.png" id="30_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/844.png" id="31_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/845.png" id="32_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/846.png" id="33_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/847.png" id="34_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/848.png" id="35_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/empty.png" id="36_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/35.png" id="37_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/655.png" id="38_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/626.png" id="39_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/627.png" id="40_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/628.png" id="41_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/629.png" id="42_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/646.png" id="43_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/293.png" id="44_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/294.png" id="45_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/295.png" id="46_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/296.png" id="47_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/251.png" id="48_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/252.png" id="49_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/253.png" id="50_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/254.png" id="51_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/234.png" id="52_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/235.png" id="53_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/236.png" id="54_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/237.png" id="55_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/238.png" id="56_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/239.png" id="57_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/240.png" id="58_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/241.png" id="59_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/247.png" id="60_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/248.png" id="61_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/249.png" id="62_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/250.png" id="63_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/307.png" id="64_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/308.png" id="65_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/309.png" id="66_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/313.png" id="67_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/314.png" id="68_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/315.png" id="69_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/316.png" id="70_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/317.png" id="71_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/318.png" id="72_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/329.png" id="73_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/330.png" id="74_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/331.png" id="75_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/332.png" id="76_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/333.png" id="77_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/69.png" id="78_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/70.png" id="79_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/71.png" id="80_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/72.png" id="81_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/73.png" id="82_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/74.png" id="83_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/75.png" id="84_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/76.png" id="85_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/77.png" id="86_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/78.png" id="87_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/79.png" id="88_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/530.png" id="89_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/531.png" id="90_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/310.png" id="91_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/311.png" id="92_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/312.png" id="93_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/51.png" id="94_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/52.png" id="95_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/53.png" id="96_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/54.png" id="97_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/55.png" id="98_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/33.png" id="99_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/573.png" id="100_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/574.png" id="101_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/575.png" id="102_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/576.png" id="103_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/2.png" id="104_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/3.png" id="105_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/4.png" id="106_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/5.png" id="107_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/6.png" id="108_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/7.png" id="109_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/8.png" id="110_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/9.png" id="111_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/262.png" id="112_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/263.png" id="113_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/264.png" id="114_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/273.png" id="115_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/274.png" id="116_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/275.png" id="117_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/276.png" id="118_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/277.png" id="119_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/278.png" id="120_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/279.png" id="121_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/280.png" id="122_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/281.png" id="123_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/282.png" id="124_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/283.png" id="125_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/284.png" id="126_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/285.png" id="127_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/286.png" id="128_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/287.png" id="129_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/288.png" id="130_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/289.png" id="131_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/290.png" id="132_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/291.png" id="133_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/292.png" id="134_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/577.png" id="135_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/580.png" id="136_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/647.png" id="137_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/648.png" id="138_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/649.png" id="139_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/650.png" id="140_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/651.png" id="141_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/652.png" id="142_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/653.png" id="143_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/654.png" id="144_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/31.png" id="145_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/32.png" id="146_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/34.png" id="147_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/258.png" id="148_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/259.png" id="149_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/260.png" id="150_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/261.png" id="151_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/15.png" id="152_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/16.png" id="153_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/17.png" id="154_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/18.png" id="155_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/19.png" id="156_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/20.png" id="157_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/21.png" id="158_tex"]
+[ext_resource type="Texture2D" path="res://characters/Sonic/sprites/22.png" id="159_tex"]
+
+[resource]
+animations = [{
+"frames": [{"duration": 0.12, "texture": ExtResource("1_tex")},
+{"duration": 0.12, "texture": ExtResource("2_tex")},
+{"duration": 0.12, "texture": ExtResource("3_tex")},
+{"duration": 0.12, "texture": ExtResource("4_tex")}],
+"loop": false,
+"name": &"attack1",
+"speed": 6.0}, {
+"frames": [{"duration": 0.09, "texture": ExtResource("5_tex")},
+{"duration": 0.09, "texture": ExtResource("6_tex")},
+{"duration": 0.09, "texture": ExtResource("7_tex")},
+{"duration": 0.09, "texture": ExtResource("8_tex")},
+{"duration": 0.09, "texture": ExtResource("9_tex")},
+{"duration": 0.09, "texture": ExtResource("10_tex")}],
+"loop": false,
+"name": &"attack2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("11_tex")},
+{"duration": 0.21, "texture": ExtResource("12_tex")},
+{"duration": 0.21, "texture": ExtResource("13_tex")},
+{"duration": 0.21, "texture": ExtResource("14_tex")},
+{"duration": 0.21, "texture": ExtResource("15_tex")},
+{"duration": 0.21, "texture": ExtResource("16_tex")},
+{"duration": 0.21, "texture": ExtResource("17_tex")},
+{"duration": 0.21, "texture": ExtResource("18_tex")}],
+"loop": false,
+"name": &"attack3",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("19_tex")},
+{"duration": 0.21, "texture": ExtResource("20_tex")},
+{"duration": 0.21, "texture": ExtResource("21_tex")},
+{"duration": 0.21, "texture": ExtResource("22_tex")},
+{"duration": 0.21, "texture": ExtResource("23_tex")},
+{"duration": 0.21, "texture": ExtResource("24_tex")},
+{"duration": 0.21, "texture": ExtResource("25_tex")}],
+"loop": false,
+"name": &"chargeattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.03, "texture": ExtResource("26_tex")},
+{"duration": 0.06, "texture": ExtResource("27_tex")},
+{"duration": 0.06, "texture": ExtResource("28_tex")},
+{"duration": 0.06, "texture": ExtResource("29_tex")},
+{"duration": 0.06, "texture": ExtResource("30_tex")},
+{"duration": 0.06, "texture": ExtResource("31_tex")},
+{"duration": 0.06, "texture": ExtResource("32_tex")},
+{"duration": 0.06, "texture": ExtResource("33_tex")},
+{"duration": 0.06, "texture": ExtResource("34_tex")},
+{"duration": 0.06, "texture": ExtResource("35_tex")},
+{"duration": 0.21, "texture": ExtResource("36_tex")},
+{"duration": 0.21, "texture": ExtResource("36_tex")},
+{"duration": 0.21, "texture": ExtResource("37_tex")}],
+"loop": false,
+"name": &"dodge",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("38_tex")}],
+"loop": false,
+"name": &"faint",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("39_tex")},
+{"duration": 0.21, "texture": ExtResource("40_tex")},
+{"duration": 0.21, "texture": ExtResource("41_tex")},
+{"duration": 0.21, "texture": ExtResource("42_tex")},
+{"duration": 0.21, "texture": ExtResource("43_tex")}],
+"loop": false,
+"name": &"fall",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("44_tex")},
+{"duration": 0.21, "texture": ExtResource("45_tex")},
+{"duration": 0.21, "texture": ExtResource("46_tex")},
+{"duration": 0.21, "texture": ExtResource("47_tex")}],
+"loop": true,
+"name": &"forwardjump",
+"speed": 6.0}, {
+"frames": [{"duration": 0.15, "texture": ExtResource("48_tex")},
+{"duration": 0.15, "texture": ExtResource("49_tex")},
+{"duration": 0.15, "texture": ExtResource("50_tex")},
+{"duration": 0.15, "texture": ExtResource("51_tex")},
+{"duration": 0.15, "texture": ExtResource("48_tex")},
+{"duration": 0.15, "texture": ExtResource("49_tex")},
+{"duration": 0.15, "texture": ExtResource("50_tex")},
+{"duration": 0.15, "texture": ExtResource("51_tex")},
+{"duration": 0.15, "texture": ExtResource("48_tex")},
+{"duration": 0.15, "texture": ExtResource("49_tex")},
+{"duration": 0.15, "texture": ExtResource("50_tex")},
+{"duration": 0.15, "texture": ExtResource("51_tex")}],
+"loop": false,
+"name": &"freespecial",
+"speed": 6.0}, {
+"frames": [{"duration": 0.03, "texture": ExtResource("26_tex")},
+{"duration": 0.06, "texture": ExtResource("27_tex")},
+{"duration": 0.06, "texture": ExtResource("28_tex")},
+{"duration": 0.06, "texture": ExtResource("29_tex")},
+{"duration": 0.06, "texture": ExtResource("30_tex")},
+{"duration": 0.06, "texture": ExtResource("31_tex")},
+{"duration": 0.06, "texture": ExtResource("32_tex")},
+{"duration": 0.06, "texture": ExtResource("33_tex")},
+{"duration": 0.06, "texture": ExtResource("34_tex")},
+{"duration": 0.06, "texture": ExtResource("35_tex")},
+{"duration": 0.21, "texture": ExtResource("36_tex")},
+{"duration": 0.21, "texture": ExtResource("36_tex")},
+{"duration": 0.21, "texture": ExtResource("37_tex")}],
+"loop": false,
+"name": &"freespecial11",
+"speed": 6.0}, {
+"frames": [{"duration": 0.12, "texture": ExtResource("52_tex")},
+{"duration": 0.12, "texture": ExtResource("53_tex")},
+{"duration": 0.12, "texture": ExtResource("54_tex")},
+{"duration": 0.12, "texture": ExtResource("55_tex")},
+{"duration": 0.12, "texture": ExtResource("56_tex")},
+{"duration": 0.12, "texture": ExtResource("57_tex")},
+{"duration": 0.12, "texture": ExtResource("58_tex")},
+{"duration": 0.12, "texture": ExtResource("59_tex")},
+{"duration": 0.12, "texture": ExtResource("60_tex")},
+{"duration": 0.12, "texture": ExtResource("61_tex")},
+{"duration": 0.12, "texture": ExtResource("62_tex")},
+{"duration": 0.12, "texture": ExtResource("63_tex")},
+{"duration": 0.12, "texture": ExtResource("64_tex")},
+{"duration": 0.12, "texture": ExtResource("65_tex")},
+{"duration": 0.12, "texture": ExtResource("66_tex")},
+{"duration": 0.12, "texture": ExtResource("67_tex")},
+{"duration": 0.12, "texture": ExtResource("68_tex")},
+{"duration": 0.12, "texture": ExtResource("69_tex")},
+{"duration": 0.12, "texture": ExtResource("70_tex")},
+{"duration": 0.12, "texture": ExtResource("71_tex")},
+{"duration": 0.12, "texture": ExtResource("72_tex")}],
+"loop": false,
+"name": &"freespecial2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("73_tex")},
+{"duration": 0.09, "texture": ExtResource("74_tex")},
+{"duration": 0.09, "texture": ExtResource("75_tex")},
+{"duration": 0.09, "texture": ExtResource("76_tex")},
+{"duration": 0.60, "texture": ExtResource("77_tex")}],
+"loop": false,
+"name": &"freespecial3",
+"speed": 6.0}, {
+"frames": [{"duration": 0.30, "texture": ExtResource("78_tex")},
+{"duration": 0.21, "texture": ExtResource("79_tex")},
+{"duration": 0.21, "texture": ExtResource("80_tex")},
+{"duration": 0.21, "texture": ExtResource("81_tex")},
+{"duration": 0.21, "texture": ExtResource("82_tex")},
+{"duration": 0.21, "texture": ExtResource("83_tex")},
+{"duration": 0.21, "texture": ExtResource("84_tex")},
+{"duration": 0.21, "texture": ExtResource("85_tex")},
+{"duration": 0.21, "texture": ExtResource("86_tex")},
+{"duration": 0.21, "texture": ExtResource("87_tex")},
+{"duration": 0.21, "texture": ExtResource("88_tex")},
+{"duration": 0.21, "texture": ExtResource("89_tex")},
+{"duration": 0.21, "texture": ExtResource("90_tex")},
+{"duration": 0.21, "texture": ExtResource("89_tex")},
+{"duration": 0.21, "texture": ExtResource("90_tex")}],
+"loop": false,
+"name": &"freespecial4",
+"speed": 6.0}, {
+"frames": [{"duration": 0.15, "texture": ExtResource("91_tex")},
+{"duration": 0.15, "texture": ExtResource("92_tex")},
+{"duration": 0.15, "texture": ExtResource("93_tex")},
+{"duration": 0.15, "texture": ExtResource("91_tex")},
+{"duration": 0.15, "texture": ExtResource("92_tex")},
+{"duration": 0.15, "texture": ExtResource("93_tex")},
+{"duration": 0.15, "texture": ExtResource("91_tex")},
+{"duration": 0.15, "texture": ExtResource("92_tex")},
+{"duration": 0.15, "texture": ExtResource("93_tex")},
+{"duration": 0.30, "texture": ExtResource("94_tex")},
+{"duration": 0.30, "texture": ExtResource("95_tex")},
+{"duration": 0.30, "texture": ExtResource("96_tex")},
+{"duration": 0.30, "texture": ExtResource("97_tex")},
+{"duration": 0.60, "texture": ExtResource("98_tex")},
+{"duration": 0.60, "texture": ExtResource("98_tex")},
+{"duration": 0.60, "texture": ExtResource("98_tex")},
+{"duration": 0.60, "texture": ExtResource("98_tex")},
+{"duration": 0.21, "texture": ExtResource("99_tex")},
+{"duration": 0.21, "texture": ExtResource("73_tex")},
+{"duration": 0.09, "texture": ExtResource("74_tex")},
+{"duration": 0.09, "texture": ExtResource("75_tex")},
+{"duration": 0.09, "texture": ExtResource("76_tex")},
+{"duration": 0.60, "texture": ExtResource("77_tex")}],
+"loop": false,
+"name": &"freespecial5",
+"speed": 6.0}, {
+"frames": [{"duration": 0.60, "texture": ExtResource("100_tex")},
+{"duration": 0.60, "texture": ExtResource("101_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.15, "texture": ExtResource("102_tex")},
+{"duration": 0.15, "texture": ExtResource("103_tex")},
+{"duration": 0.90, "texture": ExtResource("101_tex")},
+{"duration": 0.90, "texture": ExtResource("100_tex")}],
+"loop": false,
+"name": &"freespecial6",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("104_tex")},
+{"duration": 0.21, "texture": ExtResource("105_tex")},
+{"duration": 0.21, "texture": ExtResource("106_tex")},
+{"duration": 0.21, "texture": ExtResource("107_tex")},
+{"duration": 0.21, "texture": ExtResource("108_tex")},
+{"duration": 0.21, "texture": ExtResource("109_tex")},
+{"duration": 0.21, "texture": ExtResource("110_tex")},
+{"duration": 0.21, "texture": ExtResource("111_tex")}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("112_tex")},
+{"duration": 0.21, "texture": ExtResource("113_tex")},
+{"duration": 0.21, "texture": ExtResource("114_tex")}],
+"loop": true,
+"name": &"jump",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("115_tex")},
+{"duration": 0.21, "texture": ExtResource("116_tex")},
+{"duration": 0.21, "texture": ExtResource("117_tex")},
+{"duration": 0.21, "texture": ExtResource("118_tex")},
+{"duration": 0.21, "texture": ExtResource("119_tex")},
+{"duration": 0.21, "texture": ExtResource("120_tex")},
+{"duration": 0.21, "texture": ExtResource("121_tex")},
+{"duration": 0.21, "texture": ExtResource("122_tex")}],
+"loop": false,
+"name": &"jumpattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("123_tex")},
+{"duration": 0.21, "texture": ExtResource("124_tex")},
+{"duration": 0.21, "texture": ExtResource("125_tex")},
+{"duration": 0.21, "texture": ExtResource("126_tex")},
+{"duration": 0.21, "texture": ExtResource("127_tex")},
+{"duration": 0.21, "texture": ExtResource("128_tex")},
+{"duration": 0.21, "texture": ExtResource("129_tex")},
+{"duration": 0.21, "texture": ExtResource("130_tex")}],
+"loop": false,
+"name": &"jumpattack2",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("131_tex")},
+{"duration": 0.21, "texture": ExtResource("132_tex")},
+{"duration": 0.21, "texture": ExtResource("133_tex")},
+{"duration": 0.21, "texture": ExtResource("134_tex")}],
+"loop": false,
+"name": &"jumpattack3",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("135_tex")},
+{"duration": 0.21, "texture": ExtResource("136_tex")}],
+"loop": false,
+"name": &"pain",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("137_tex")},
+{"duration": 0.21, "texture": ExtResource("138_tex")},
+{"duration": 0.21, "texture": ExtResource("139_tex")},
+{"duration": 0.21, "texture": ExtResource("140_tex")},
+{"duration": 0.21, "texture": ExtResource("141_tex")},
+{"duration": 0.21, "texture": ExtResource("142_tex")},
+{"duration": 0.21, "texture": ExtResource("143_tex")},
+{"duration": 0.21, "texture": ExtResource("144_tex")}],
+"loop": false,
+"name": &"rise",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("26_tex")},
+{"duration": 0.21, "texture": ExtResource("145_tex")},
+{"duration": 0.21, "texture": ExtResource("146_tex")},
+{"duration": 0.21, "texture": ExtResource("99_tex")},
+{"duration": 0.21, "texture": ExtResource("147_tex")},
+{"duration": 0.21, "texture": ExtResource("37_tex")}],
+"loop": true,
+"name": &"run",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("148_tex")},
+{"duration": 0.21, "texture": ExtResource("149_tex")},
+{"duration": 0.21, "texture": ExtResource("150_tex")},
+{"duration": 0.21, "texture": ExtResource("151_tex")}],
+"loop": false,
+"name": &"runattack",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("94_tex")},
+{"duration": 0.21, "texture": ExtResource("95_tex")},
+{"duration": 0.21, "texture": ExtResource("96_tex")},
+{"duration": 0.21, "texture": ExtResource("97_tex")},
+{"duration": 0.21, "texture": ExtResource("98_tex")}],
+"loop": false,
+"name": &"select",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("104_tex")}],
+"loop": false,
+"name": &"spawn",
+"speed": 6.0}, {
+"frames": [{"duration": 0.21, "texture": ExtResource("152_tex")},
+{"duration": 0.21, "texture": ExtResource("153_tex")},
+{"duration": 0.21, "texture": ExtResource("154_tex")},
+{"duration": 0.21, "texture": ExtResource("155_tex")},
+{"duration": 0.21, "texture": ExtResource("156_tex")},
+{"duration": 0.21, "texture": ExtResource("157_tex")},
+{"duration": 0.21, "texture": ExtResource("158_tex")},
+{"duration": 0.21, "texture": ExtResource("159_tex")}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]

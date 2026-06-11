@@ -31,12 +31,37 @@ func _ready():
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 		label.add_theme_font_size_override("font_size", 11)
+		
+		# Make clickable/tappable
+		label.mouse_filter = Control.MOUSE_FILTER_STOP
+		label.gui_input.connect(_on_label_gui_input.bind(i))
+		
 		list_container.add_child(label)
 		list_labels.append(label)
 		
 	update_selection()
 	if music_player:
 		music_player.play()
+
+func _gui_input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if music_player and not music_player.playing:
+			music_player.play()
+
+func _on_label_gui_input(event: InputEvent, index: int):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if music_player and not music_player.playing:
+			music_player.play()
+			
+		if active_index == index:
+			if confirm_sound:
+				confirm_sound.play()
+			confirm_selection()
+		else:
+			active_index = index
+			update_selection()
+			if select_sound:
+				select_sound.play()
 
 func _process(_delta):
 	var prev_index = active_index

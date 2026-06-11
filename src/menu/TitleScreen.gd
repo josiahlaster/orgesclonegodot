@@ -13,8 +13,34 @@ func _ready():
 	Globals.reset_game()
 	
 	update_menu_display()
+	
+	# Enable mouse filter for options to detect clicks/taps
+	for i in range(menu_options.get_child_count()):
+		var label = menu_options.get_child(i) as Label
+		if label:
+			label.mouse_filter = Control.MOUSE_FILTER_STOP
+			label.gui_input.connect(_on_label_gui_input.bind(i))
+			
 	if music_player:
 		music_player.play()
+
+func _gui_input(event):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if music_player and not music_player.playing:
+			music_player.play()
+
+func _on_label_gui_input(event: InputEvent, index: int):
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if music_player and not music_player.playing:
+			music_player.play()
+			
+		if selected_index == index:
+			play_confirm_sound()
+			execute_option()
+		else:
+			selected_index = index
+			update_menu_display()
+			play_selection_sound()
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_up"):

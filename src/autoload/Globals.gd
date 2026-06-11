@@ -65,6 +65,7 @@ var _music_library: Dictionary = {}
 var _music_player: AudioStreamPlayer = null
 var _current_music_path: String = ""
 var _audio_unlocked: bool = false
+var _pending_path: String = ""
 
 func _ready():
 	# Build lookup table of path → preloaded stream
@@ -113,11 +114,13 @@ func play_music(path: String, force_restart: bool = false):
 func _do_play(path: String):
 	var stream = _music_library.get(path)
 	if stream == null:
-		push_error("Globals._do_play: No preloaded stream for: " + path)
+		push_error("Globals.play_music: No preloaded stream for path: " + path)
 		return
+	# Stop any currently playing track first
 	if _music_player.playing:
 		_music_player.stop()
 	_music_player.stream = stream
+	# call_deferred so the audio driver frame is fully ready before play()
 	_music_player.call_deferred("play")
 	_audio_unlocked = true
 

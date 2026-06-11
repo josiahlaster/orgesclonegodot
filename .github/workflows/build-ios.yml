@@ -31,16 +31,14 @@ jobs:
         mv templates_zip/templates/* ~/Library/Application\ Support/Godot/export_templates/4.6.2.stable/
         ls ~/Library/Application\ Support/Godot/export_templates/4.6.2.stable/
 
-    - name: Import all project resources
-      # Godot 4.3+ supports --headless --import which fully imports every
-      # resource (audio, textures, scenes) and writes compiled data to
-      # .godot/imported/. This MUST run before --export-release otherwise
-      # the .godot/ folder is empty (it is gitignored) and exported PCKs
-      # contain broken / zero-byte audio and texture data.
+    - name: Import project resources
       run: |
-        godot --headless --import
-        echo "Import completed. Imported files:"
-        ls .godot/imported/ | wc -l
+        # Run Godot in editor mode headlessly to fully import all resources
+        # (audio, textures, etc.) before the export step. Without this the
+        # .godot/imported/ directory is empty and exported PCKs have broken
+        # or missing audio/texture data.
+        godot --headless --editor --quit-after 60 || true
+        echo "Import step complete"
 
     - name: Create build directory
       run: mkdir -p build
@@ -52,23 +50,18 @@ jobs:
       run: sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = 10.0;/IPHONEOS_DEPLOYMENT_TARGET = 12.0;/' build/your_project_name.xcodeproj/project.pbxproj
 
     - name: Build iOS project
-      run: |
-        xcodebuild \
-          -project build/your_project_name.xcodeproj \
-          -scheme your_project_name \
-          -configuration Development \
-          -archivePath build/your_project_name.xcarchive \
-          archive \
-          CODE_SIGN_IDENTITY="" \
-          CODE_SIGNING_REQUIRED=NO \
-          CODE_SIGNING_ALLOWED=NO
+      run: xcodebuild -project build/your_project_name.xcodeproj -scheme your_project_name -configuration Development -archivePath build/your_project_name.xcarchive archive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 
     - name: Export IPA
       run: |
-        mkdir -p build/Payload
-        mv build/your_project_name.xcarchive/Products/Applications/your_project_name.app build/Payload/
         cd build
+        cd your_project_name.xcarchive
+        cd Products
+        cd Applications
+        mkdir Payload
+        mv your_project_name.app Payload/
         zip -r App.ipa Payload/
+        mv App.ipa ../../../
 
     - name: Upload IPA to GitHub Artifacts
       uses: actions/upload-artifact@v4

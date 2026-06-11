@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/gameover.ogg-0796e33fb56d57dd477549a4fe360a42
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

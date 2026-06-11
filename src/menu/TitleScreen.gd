@@ -1,14 +1,11 @@
 extends Control
 
 @onready var menu_options = $CanvasLayer/VBoxContainer
-@onready var music_player = $AudioStreamPlayer
 @onready var selection_sound = $SelectionSound
 @onready var confirm_sound = $ConfirmSound
 
 var selected_index: int = 0
 var options = ["START GAME", "TRAINING", "EXIT"]
-
-var _audio_unlocked: bool = false
 
 func _ready():
 	# Reset game stats on returning to main menu
@@ -22,26 +19,12 @@ func _ready():
 		if label:
 			label.mouse_filter = Control.MOUSE_FILTER_STOP
 			label.gui_input.connect(_on_label_gui_input.bind(i))
-			
-	# Try to play immediately (works on desktop; mobile may need user gesture)
-	if music_player:
-		music_player.play()
-		_audio_unlocked = true
-
-func _input(event):
-	# Unlock audio on first any touch/click (mobile audio policy)
-	if not _audio_unlocked and event is InputEventMouseButton and event.pressed:
-		_audio_unlocked = true
-		if music_player and not music_player.playing:
-			music_player.play()
+	
+	# Play menu music via global player (persists across scenes, retries on touch)
+	Globals.play_music("res://assets/music/menu.ogg")
 
 func _on_label_gui_input(event: InputEvent, index: int):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		# Ensure music is playing (mobile audio unlock)
-		if music_player and not music_player.playing:
-			music_player.play()
-			_audio_unlocked = true
-			
 		if selected_index == index:
 			play_confirm_sound()
 			execute_option()

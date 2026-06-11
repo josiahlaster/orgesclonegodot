@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxryyyx3d4y4"]
+[gd_scene load_steps=3 format=3 uid="uid://cxryyyx3d4y4"]
 
-[ext_resource type="Script" path="res://src/menu/StageIntro.gd" id="1_script"]
-[ext_resource type="Texture2D" path="res://assets/menu/ogres-story.png" id="2_bg"]
-[ext_resource type="AudioStream" path="res://assets/music/stage-intro.ogg" id="3_music"]
+[ext_resource type="Script" uid="uid://ry0cyfq8htru" path="res://src/menu/StageIntro.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dsoagur1lwens" path="res://assets/menu/ogres-story.png" id="2_bg"]
 
 [node name="StageIntro" type="Control"]
 layout_mode = 3
@@ -85,10 +84,6 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
 theme_override_font_sizes/font_size = 9
-text = "PRESS ENTER TO SKIP"
+text = "TAP SCREEN TO SKIP"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_music")
-volume_db = -5.0

@@ -2,7 +2,6 @@ extends Node2D
 
 @onready var gameplay_area = $GameplayArea
 @onready var camera = $Camera2D
-@onready var music_player = $MusicPlayer
 @onready var hud = $HUD
 @onready var go_sign = $GoSign
 
@@ -58,8 +57,6 @@ var current_scroll_lock_x: float = 0.0
 var is_scroll_locked: bool = false
 var reinforcement_triggered: bool = false
 var dialog_box = null
-var _audio_unlocked: bool = false
-var _stage_music_path: String = "res://assets/music/stage1.ogg"
 
 func _ready():
 	# Reset score/health
@@ -68,11 +65,8 @@ func _ready():
 	# Spawn selected player character
 	spawn_player()
 	
-	# Play Stage 1 music
-	if music_player:
-		music_player.stream = load(_stage_music_path)
-		music_player.play()
-		_audio_unlocked = true
+	# Play Stage 1 music via global player
+	Globals.play_music("res://assets/music/stage1.ogg")
 		
 	# Setup initial camera limits
 	camera.limit_left = 0
@@ -80,12 +74,6 @@ func _ready():
 	camera.limit_bottom = 278
 	camera.limit_right = 3424
 
-func _input(event):
-	# Fallback audio unlock for mobile (in case OS blocks autoplay on scene load)
-	if not _audio_unlocked and event is InputEventKey or (event is InputEventMouseButton and event.pressed):
-		_audio_unlocked = true
-		if music_player and not music_player.playing:
-			music_player.play()
 
 func spawn_player():
 	var char_name = Globals.selected_character
@@ -283,10 +271,8 @@ func spawn_item(type: String, coords: Vector2):
 		item.global_position = Vector2(current_scroll_lock_x + (coords.x - 240.0), coords.y)
 
 func trigger_boss_intro(boss_instance):
-	# Switch music to boss
-	if music_player:
-		music_player.stream = load("res://assets/music/stage1-boss.ogg")
-		music_player.play()
+	# Switch music to boss via global player
+	Globals.play_music("res://assets/music/stage1-boss.ogg", true)
 		
 	# Freeze player and boss controls
 	if player_instance:
@@ -343,10 +329,8 @@ func trigger_victory():
 	Globals.boss_active = false
 	Globals.boss_state_changed.emit(false)
 	
-	# Play Stage Clear music
-	if music_player:
-		music_player.stream = load("res://assets/music/complete.ogg")
-		music_player.play()
+	# Play Stage Clear music via global player
+	Globals.play_music("res://assets/music/complete.ogg", true)
 		
 	if player_instance:
 		player_instance.set_physics_process(false)

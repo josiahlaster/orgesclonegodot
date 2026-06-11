@@ -3,7 +3,6 @@ extends Control
 @onready var sprite_preview = $CanvasLayer/PreviewPanel/AnimatedSprite2D
 @onready var name_label = $CanvasLayer/PreviewPanel/NameLabel
 @onready var list_container = $CanvasLayer/ListPanel/GridContainer
-@onready var music_player = $AudioStreamPlayer
 @onready var select_sound = $SelectionSound
 @onready var confirm_sound = $ConfirmSound
 
@@ -22,7 +21,6 @@ var characters = [
 
 var active_index: int = 0
 var list_labels = []
-var _audio_unlocked: bool = false
 
 func _ready():
 	# Populate labels
@@ -41,25 +39,12 @@ func _ready():
 		list_labels.append(label)
 		
 	update_selection()
-	# Try to play immediately (works on desktop; mobile may need user gesture)
-	if music_player:
-		music_player.play()
-		_audio_unlocked = true
-
-func _input(event):
-	# Unlock audio on first any touch/click (mobile audio policy)
-	if not _audio_unlocked and event is InputEventMouseButton and event.pressed:
-		_audio_unlocked = true
-		if music_player and not music_player.playing:
-			music_player.play()
+	
+	# Play char select music via global player
+	Globals.play_music("res://assets/music/select.ogg")
 
 func _on_label_gui_input(event: InputEvent, index: int):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		# Ensure music is playing (mobile audio unlock)
-		if music_player and not music_player.playing:
-			music_player.play()
-			_audio_unlocked = true
-			
 		if active_index == index:
 			if confirm_sound:
 				confirm_sound.play()
@@ -101,7 +86,7 @@ func update_selection():
 		else:
 			label.text = characters[i]["display_name"]
 			label.add_theme_color_override("font_color", Color(1, 1, 1)) # White
-			
+		
 	# Update preview sprite
 	var selected_char = characters[active_index]
 	name_label.text = selected_char["display_name"].to_upper()
@@ -111,7 +96,6 @@ func update_selection():
 		var frames = load(frames_path)
 		sprite_preview.sprite_frames = frames
 		
-		# OpenBOR characters converted might have different casing: "idle" or "idle" animation
 		var idle_anim = "idle"
 		if frames.has_animation("idle"):
 			idle_anim = "idle"

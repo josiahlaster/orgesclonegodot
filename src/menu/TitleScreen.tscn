@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://ctsd3bvp5loog" path="res://src/menu/TitleScreen.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://cbuxxwsv8trga" path="res://assets/menu/title.png" id="2_bg"]
-[ext_resource type="AudioStream" uid="uid://cct50gm1btjhf" path="res://assets/music/menu.ogg" id="3_music"]
 [ext_resource type="AudioStream" uid="uid://clorjt78h6fx1" path="res://assets/sounds/walk.wav" id="4_select"]
 [ext_resource type="AudioStream" uid="uid://dds62s4t377y6" path="res://assets/sounds/1up.wav" id="5_confirm"]
 
@@ -104,10 +103,6 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
 text = "USE JOY STICK TO NAVIGATE • PRESS A TO SELECT"
 horizontal_alignment = 1
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=980199386]
-stream = ExtResource("3_music")
-volume_db = -5.0
 
 [node name="SelectionSound" type="AudioStreamPlayer" parent="." unique_id=1551500580]
 stream = ExtResource("4_select")

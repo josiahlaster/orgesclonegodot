@@ -15,6 +15,11 @@ run/main_scene="res://src/menu/TitleScreen.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[audio]
+
+driver/mix_with_others=true
+general/ios/mix_with_others=true
+
 [autoload]
 
 Globals="*res://src/autoload/Globals.gd"

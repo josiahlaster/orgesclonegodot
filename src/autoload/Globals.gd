@@ -1,6 +1,6 @@
 extends Node
 
-var selected_character: String = "deku"
+var selected_character: String = "Deku"
 
 var player_lives: int = 3:
 	set(val):

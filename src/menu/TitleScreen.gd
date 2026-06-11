@@ -8,6 +8,8 @@ extends Control
 var selected_index: int = 0
 var options = ["START GAME", "TRAINING", "EXIT"]
 
+var _audio_unlocked: bool = false
+
 func _ready():
 	# Reset game stats on returning to main menu
 	Globals.reset_game()
@@ -21,18 +23,24 @@ func _ready():
 			label.mouse_filter = Control.MOUSE_FILTER_STOP
 			label.gui_input.connect(_on_label_gui_input.bind(i))
 			
+	# Try to play immediately (works on desktop; mobile may need user gesture)
 	if music_player:
 		music_player.play()
+		_audio_unlocked = true
 
-func _gui_input(event):
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+func _input(event):
+	# Unlock audio on first any touch/click (mobile audio policy)
+	if not _audio_unlocked and event is InputEventMouseButton and event.pressed:
+		_audio_unlocked = true
 		if music_player and not music_player.playing:
 			music_player.play()
 
 func _on_label_gui_input(event: InputEvent, index: int):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		# Ensure music is playing (mobile audio unlock)
 		if music_player and not music_player.playing:
 			music_player.play()
+			_audio_unlocked = true
 			
 		if selected_index == index:
 			play_confirm_sound()

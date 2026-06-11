@@ -46,8 +46,8 @@ var spawn_triggers = [
 		"spawned": false,
 		"enemies": [
 			{"type": "sasuke_e", "coords": Vector2(530, 200), "boss": true},
-			{"type": "sakuranpc", "coords": Vector2(530, 97), "npc": true},
-			{"type": "inonpc", "coords": Vector2(569, 97), "npc": true}
+			{"type": "SakuraNPC", "coords": Vector2(530, 97), "npc": true},
+			{"type": "InoNPC", "coords": Vector2(569, 97), "npc": true}
 		],
 		"item": null
 	}
@@ -58,6 +58,8 @@ var current_scroll_lock_x: float = 0.0
 var is_scroll_locked: bool = false
 var reinforcement_triggered: bool = false
 var dialog_box = null
+var _audio_unlocked: bool = false
+var _stage_music_path: String = "res://assets/music/stage1.ogg"
 
 func _ready():
 	# Reset score/health
@@ -68,14 +70,22 @@ func _ready():
 	
 	# Play Stage 1 music
 	if music_player:
-		music_player.stream = load("res://assets/music/stage1.ogg")
+		music_player.stream = load(_stage_music_path)
 		music_player.play()
+		_audio_unlocked = true
 		
 	# Setup initial camera limits
 	camera.limit_left = 0
 	camera.limit_top = 0
 	camera.limit_bottom = 278
 	camera.limit_right = 3424
+
+func _input(event):
+	# Fallback audio unlock for mobile (in case OS blocks autoplay on scene load)
+	if not _audio_unlocked and event is InputEventKey or (event is InputEventMouseButton and event.pressed):
+		_audio_unlocked = true
+		if music_player and not music_player.playing:
+			music_player.play()
 
 func spawn_player():
 	var char_name = Globals.selected_character
@@ -181,7 +191,7 @@ func trigger_scroll_lock(trigger):
 		trigger_boss_intro(spawned_boss)
 
 func spawn_enemy(type: String, pos: Vector2, is_boss: bool) -> CharacterBody2D:
-	var path = "res://characters/ninja/Player.tscn"
+	var path = "res://characters/Ninja/Player.tscn"
 	var display_name = "Ninja"
 	var max_hp = 40.0
 	var spd_x = 80.0
@@ -189,21 +199,21 @@ func spawn_enemy(type: String, pos: Vector2, is_boss: bool) -> CharacterBody2D:
 	var enemy_damage = 8.0
 	
 	if type == "marine":
-		path = "res://characters/marine/Player.tscn"
+		path = "res://characters/Marine/Player.tscn"
 		display_name = "Marine"
 		max_hp = 60.0
 		spd_x = 70.0
 		points_val = 150
 		enemy_damage = 10.0
 	elif type == "lobster":
-		path = "res://characters/lobster/Player.tscn"
+		path = "res://characters/Lobster/Player.tscn"
 		display_name = "Lobster"
 		max_hp = 80.0
 		spd_x = 60.0
 		points_val = 200
 		enemy_damage = 12.0
 	elif type == "sasuke_e":
-		path = "res://characters/sasuke/Player.tscn"
+		path = "res://characters/Sasuke/Player.tscn"
 		display_name = "Sasuke"
 		max_hp = 300.0
 		spd_x = 100.0

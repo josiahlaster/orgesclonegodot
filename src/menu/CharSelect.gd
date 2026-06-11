@@ -8,20 +8,21 @@ extends Control
 @onready var confirm_sound = $ConfirmSound
 
 var characters = [
-	{"id": "deku", "display_name": "Deku", "path": "res://characters/deku/"},
-	{"id": "gon", "display_name": "Gon", "path": "res://characters/gon/"},
-	{"id": "luffy", "display_name": "Luffy", "path": "res://characters/luffy/"},
-	{"id": "naruto", "display_name": "Naruto", "path": "res://characters/naruto/"},
-	{"id": "yusuke", "display_name": "Yusuke", "path": "res://characters/yusuke/"},
-	{"id": "goku_normal", "display_name": "Goku", "path": "res://characters/goku_normal/"},
-	{"id": "ichigo", "display_name": "Ichigo", "path": "res://characters/ichigo/"},
-	{"id": "rock_lee", "display_name": "Lee", "path": "res://characters/rock_lee/"},
-	{"id": "sonic", "display_name": "Sonic", "path": "res://characters/sonic/"},
-	{"id": "sora", "display_name": "Sora", "path": "res://characters/sora/"}
+	{"id": "Deku", "display_name": "Deku", "path": "res://characters/Deku/"},
+	{"id": "Gon", "display_name": "Gon", "path": "res://characters/Gon/"},
+	{"id": "Luffy", "display_name": "Luffy", "path": "res://characters/Luffy/"},
+	{"id": "Naruto", "display_name": "Naruto", "path": "res://characters/Naruto/"},
+	{"id": "Yusuke", "display_name": "Yusuke", "path": "res://characters/Yusuke/"},
+	{"id": "Goku_Normal", "display_name": "Goku", "path": "res://characters/Goku_Normal/"},
+	{"id": "Ichigo", "display_name": "Ichigo", "path": "res://characters/Ichigo/"},
+	{"id": "Rock_Lee", "display_name": "Lee", "path": "res://characters/Rock_Lee/"},
+	{"id": "Sonic", "display_name": "Sonic", "path": "res://characters/Sonic/"},
+	{"id": "Sora", "display_name": "Sora", "path": "res://characters/Sora/"}
 ]
 
 var active_index: int = 0
 var list_labels = []
+var _audio_unlocked: bool = false
 
 func _ready():
 	# Populate labels
@@ -40,18 +41,24 @@ func _ready():
 		list_labels.append(label)
 		
 	update_selection()
+	# Try to play immediately (works on desktop; mobile may need user gesture)
 	if music_player:
 		music_player.play()
+		_audio_unlocked = true
 
-func _gui_input(event):
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+func _input(event):
+	# Unlock audio on first any touch/click (mobile audio policy)
+	if not _audio_unlocked and event is InputEventMouseButton and event.pressed:
+		_audio_unlocked = true
 		if music_player and not music_player.playing:
 			music_player.play()
 
 func _on_label_gui_input(event: InputEvent, index: int):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		# Ensure music is playing (mobile audio unlock)
 		if music_player and not music_player.playing:
 			music_player.play()
+			_audio_unlocked = true
 			
 		if active_index == index:
 			if confirm_sound:

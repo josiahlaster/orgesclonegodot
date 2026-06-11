@@ -1,102 +1,98 @@
 extends Control
 
-@export var max_drag_radius: float = 30.0
-@export var joystick_color: Color = Color(0.2, 0.6, 1.0, 0.4)
+# Floating joystick — activates wherever the player touches on the left half of screen
+@export var max_drag_radius: float = 45.0
+@export var joystick_color: Color = Color(0.18, 0.5, 0.94, 0.5)
 
 var active_touch_index: int = -1
-var joystick_center: Vector2 = Vector2.ZERO
-var drag_position: Vector2 = Vector2.ZERO
+var touch_start: Vector2 = Vector2.ZERO   # Where finger first landed
+var drag_position: Vector2 = Vector2.ZERO  # Current finger position
+var is_active: bool = false
 
 func _ready():
-	custom_minimum_size = Vector2(80, 80)
-	# Wait for sizing
-	await get_tree().process_frame
-	joystick_center = size / 2.0
-	drag_position = joystick_center
+	# Full left-half of screen is the joystick zone
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	custom_minimum_size = Vector2.ZERO
 
 func _draw():
-	# Draw base circle
+	if not is_active:
+		# Draw faint hint circle so players know where to press
+		var hint_pos = Vector2(size.x * 0.25, size.y * 0.78)
+		draw_arc(hint_pos, max_drag_radius, 0, TAU, 32, Color(1, 1, 1, 0.08), 1.5, true)
+		var inner = max_drag_radius * 0.35
+		draw_circle(hint_pos, inner, Color(1, 1, 1, 0.06))
+		return
+
+	# Draw base ring at touch origin
 	var base_color = joystick_color
-	base_color.a = 0.15
-	draw_circle(joystick_center, max_drag_radius, base_color)
-	draw_arc(joystick_center, max_drag_radius, 0, TAU, 32, Color(1, 1, 1, 0.25), 1.5, true)
-	
-	# Draw center handle
+	base_color.a = 0.18
+	draw_circle(touch_start, max_drag_radius, base_color)
+	draw_arc(touch_start, max_drag_radius, 0, TAU, 48, Color(1, 1, 1, 0.3), 2.0, true)
+
+	# Draw inner guide ring
+	draw_arc(touch_start, max_drag_radius * 0.5, 0, TAU, 32, Color(1, 1, 1, 0.12), 1.0, true)
+
+	# Draw movable handle
 	var handle_color = joystick_color
-	handle_color.a = 0.65 if active_touch_index != -1 else 0.4
-	draw_circle(drag_position, max_drag_radius * 0.4, handle_color)
-	draw_arc(drag_position, max_drag_radius * 0.4, 0, TAU, 32, Color(1, 1, 1, 0.5), 1.0, true)
+	handle_color.a = 0.75
+	draw_circle(drag_position, max_drag_radius * 0.38, handle_color)
+	draw_arc(drag_position, max_drag_radius * 0.38, 0, TAU, 32, Color(1, 1, 1, 0.7), 1.5, true)
 
 func _input(event):
 	if event is InputEventScreenTouch:
-		var local_pos = make_input_local(event).position
-		var dist = local_pos.distance_to(joystick_center)
-		
+		var pos = event.position
+
 		if event.pressed:
-			if dist <= max_drag_radius * 1.5 and active_touch_index == -1:
+			# Only claim touches on the left 55% of screen
+			if active_touch_index == -1 and pos.x < size.x * 0.55:
 				active_touch_index = event.index
-				update_joystick(local_pos)
+				touch_start = pos
+				drag_position = pos
+				is_active = true
+				queue_redraw()
+				process_direction(Vector2.ZERO)
 		else:
 			if event.index == active_touch_index:
-				reset_joystick()
-				
+				_release()
+
 	elif event is InputEventScreenDrag:
 		if event.index == active_touch_index:
-			var local_pos = make_input_local(event).position
-			update_joystick(local_pos)
+			drag_position = event.position
+			var diff = drag_position - touch_start
+			if diff.length() > max_drag_radius:
+				diff = diff.normalized() * max_drag_radius
+				drag_position = touch_start + diff
+			queue_redraw()
+			process_direction(diff / max_drag_radius)
 
-func update_joystick(pos: Vector2):
-	var diff = pos - joystick_center
-	var dist = diff.length()
-	
-	if dist > max_drag_radius:
-		diff = diff.normalized() * max_drag_radius
-		
-	drag_position = joystick_center + diff
-	queue_redraw()
-	
-	var dir = diff / max_drag_radius
-	process_joystick_direction(dir)
-
-func reset_joystick():
+func _release():
 	active_touch_index = -1
-	drag_position = joystick_center
+	is_active = false
+	drag_position = touch_start
 	queue_redraw()
-	process_joystick_direction(Vector2.ZERO)
+	process_direction(Vector2.ZERO)
 
-func process_joystick_direction(dir: Vector2):
-	var threshold = 0.3
-	
-	# Horizontal direction
+func process_direction(dir: Vector2):
+	var threshold = 0.28
+
+	# Horizontal
 	if dir.x > threshold:
-		if not Input.is_action_pressed("ui_right"):
-			Input.action_press("ui_right")
-		if Input.is_action_pressed("ui_left"):
-			Input.action_release("ui_left")
+		if not Input.is_action_pressed("ui_right"): Input.action_press("ui_right")
+		if Input.is_action_pressed("ui_left"):      Input.action_release("ui_left")
 	elif dir.x < -threshold:
-		if not Input.is_action_pressed("ui_left"):
-			Input.action_press("ui_left")
-		if Input.is_action_pressed("ui_right"):
-			Input.action_release("ui_right")
+		if not Input.is_action_pressed("ui_left"):  Input.action_press("ui_left")
+		if Input.is_action_pressed("ui_right"):     Input.action_release("ui_right")
 	else:
-		if Input.is_action_pressed("ui_right"):
-			Input.action_release("ui_right")
-		if Input.is_action_pressed("ui_left"):
-			Input.action_release("ui_left")
-			
-	# Vertical direction
+		if Input.is_action_pressed("ui_right"): Input.action_release("ui_right")
+		if Input.is_action_pressed("ui_left"):  Input.action_release("ui_left")
+
+	# Vertical
 	if dir.y > threshold:
-		if not Input.is_action_pressed("ui_down"):
-			Input.action_press("ui_down")
-		if Input.is_action_pressed("ui_up"):
-			Input.action_release("ui_up")
+		if not Input.is_action_pressed("ui_down"): Input.action_press("ui_down")
+		if Input.is_action_pressed("ui_up"):       Input.action_release("ui_up")
 	elif dir.y < -threshold:
-		if not Input.is_action_pressed("ui_up"):
-			Input.action_press("ui_up")
-		if Input.is_action_pressed("ui_down"):
-			Input.action_release("ui_down")
+		if not Input.is_action_pressed("ui_up"):   Input.action_press("ui_up")
+		if Input.is_action_pressed("ui_down"):     Input.action_release("ui_down")
 	else:
-		if Input.is_action_pressed("ui_up"):
-			Input.action_release("ui_up")
-		if Input.is_action_pressed("ui_down"):
-			Input.action_release("ui_down")
+		if Input.is_action_pressed("ui_up"):   Input.action_release("ui_up")
+		if Input.is_action_pressed("ui_down"): Input.action_release("ui_down")
